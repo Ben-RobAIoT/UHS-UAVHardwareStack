@@ -14,16 +14,6 @@ VERVSION: 1.0.2
 * **Cấu trúc PCB:** Mạch 2 lớp (2-Layer PCB), độ dày 1.6mm. Phủ đồng GND (Polygon Pour) kín 2 mặt kết hợp Via Stitching tạo lồng Faraday chống nhiễu sóng.
 
 ## 🛠️ Nhật ký Thiết kế & Cập nhật (Changelog)
-
-### Schematic (Cập nhật Sơ đồ nguyên lý)
-* **[Fixed]** Sửa lỗi gộp nhầm net `$1N2075` ở khối nguồn Buck:
-  * Tách tụ Output Bulk (C3, C4 22uF/10V) khỏi đường hồi tiếp (FB) và nối chuẩn về mặt phẳng GND để lọc nhiễu gợn sóng (Ripple).
-  * Chuyển tụ Bootstrap (C5 100nF) mắc đúng giữa node SW và BOOT của IC TPS54302, đảm bảo mạch driver FET hoạt động.
-* **[Optimized]** Cấu hình lại chuẩn giao tiếp:
-  * Chập đúng các chân Dp1/Dp2 và Dn1/Dn2 trên cổng Type-C. Bỏ trống chân VBUS để loại trừ rủi ro xung đột nguồn với Radxa.
-  * Hủy bỏ tụ debounce 10uF ở đường `WIFI_RST` để tín hiệu số bật/tắt module dứt khoát hơn.
-  * Nối đúng sơ đồ bộ chia điện áp R1/R2 vào chân FB và điện trở kéo lên R45 vào `VIN_BAT`.
-
 ### PCB Layout (Định tuyến & Sắp xếp linh kiện)
 * **[Rules Setup]** Áp dụng luật thiết kế (Design Rules) trong EasyEDA Pro:
   * Khoảng cách an toàn (Clearance) tiêu chuẩn: `0.254mm` (10 mil).

@@ -1,4 +1,5 @@
 # UAV 5G WiFi Integration HAT for Radxa Zero 3W
+VERVSION: 1.0.2
 
 ## 📖 Tổng quan dự án (Project Overview)
 Đây là tài liệu thiết kế phần cứng cho bo mạch mở rộng (HAT) tích hợp module WiFi 5G, được thiết kế dưới dạng xếp chồng (stack) lên máy tính nhúng Radxa Zero 3W. Mạch được nghiên cứu và tối ưu hóa chuyên biệt cho hệ thống UAV của dự án AirAware, đảm bảo độ ổn định toàn vẹn tín hiệu, khả năng chịu dòng tải lớn và chống nhiễu EMI trong điều kiện bay thực tế.
